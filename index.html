@@ -16,10 +16,9 @@
     <body>
         <div class="container-fluid"><!--Contenedor principal-->
             <div class="container-fluid row bg-dark text-light shadow-lg"><!--Header-->
-                <div class="col-1">
-                    </br>
+                <div class="col-1 justify-content-center">
                     <img src="res/foto-personal.jpg" alt="Foto personal" 
-                    class="rounded mx-auto d-block" 
+                    class="rounded-circle ml-4 mt-4 text-center" 
                     height="60px">
                 </div>
                 <div class="col-11">
@@ -58,12 +57,83 @@
                 <!--Contenido principal de la página-->
                 <div class="col">
 
+                    <h1 class="font-weight-bold mt-5 text-center display-4">Bienvenido/a.</h1>
+                    <p class="text-justify pl-3 pr-3 lead">
+                        Me presento. Como indica el encabezado, mi nombre es Eduardo Brahim Alí y soy un desarrollador
+                        iniciante, por lo que creé esta página con dos motivos en mente:
+                    </p>
+                    <p class="text-justify pl-3 pr-3">
+                        Por un lado, compartir un poco de mi experiencia, detallar un poco mis proyectos y recomendar
+                        algunas herramientas que posiblemente sean útiles para aquellos que se inician en lo que es el
+                        desarrollo de software y desarrollo web.
+                    </p>
+                    <p class="text-justify pl-3 pr-3">
+                        Y por el otro, para que esta página en sí sirva como proyecto de muestra en el manejo de Bootstrap
+                        CSS, intentando demostrar que con suficiente conocimiento básico de la herramienta es posible crear
+                        una página funcional y responsivo haciendo uso del framework, limitándose a escribir todo 
+                        el código de la página íntegramente en HTML.
+                    </p>
+                    <p class="text-justify pl-3 pr-3 lead mt-2">
+                        En las siguientes secciones, se se encuentra info detallada como:
+                    </p>
+                    <dl>
+                        <dt>
+                            <a href="html/perfil-profesional.html" class="text-dark">
+                            Perfil profesional</a>
+                        </dt>
+                        <dd>- Detalles sobre los trabajos con los que estoy familiarizado y las aptitudes
+                            que conseguí a través de ellos.
+                        </dd>
+                        <dt>
+                            <a href="html/servicios.html" class="text-dark">Servicios</a>
+                        </dt>
+                        <dd>- Una serie de servicios que me siento preparado para ofrecer de forma profesional 
+                            de cara a un cliente.
+                        </dd>
+                        <dt>
+                            <a href="html/proyectos.html" class="text-dark">
+                            Proyectos</a>
+                        </dt>
+                        <dd>- Descripción y enlaces a mis proyectos personales, de código abierto y disponibles
+                            en mi repositorio de <a href="https://github.com/Brahim006">Github</a>.
+                        </dd>
+                        <dt>
+                            <a href="html/metas.html" class="text-dark">
+                            Metas</a>
+                        </dt>
+                        <dd>- Mis metas y ambiciones a corto y largo plazo (relacionado al rumbo que pienso
+                            seguir en mi educación sobre programación y desarrollo).
+                        </dd>
+                        <dt>
+                            <a href="html/links.html" class="text-dark">
+                            Links útiles</a>
+                        </dt>
+                        <dd>- Algunos links y recomendaciones personales sobre cursos/libros/info que me fueron
+                            y son útiles.
+                        </dd>
+                        <dt>
+                            <a href="html/contacto.html" class="text-dark">
+                            Contacto</a>
+                        </dt>
+                        <dd>- Información de contacto básica para cualquier tipo de consulta, además de un 
+                            formulario de contacto para consultas rápidas.
+                        </dd>
+                    </dl>
+                    <blockquote class="blockquote border border-dark rounded mt-5 m-3 p-3 shadow-lg">
+                        <p class="lead">
+                            Nota: Esta página sirve como acompañamiento durante todo mi desarrollo profesional,
+                            por lo que es de esperarse que van a haber múltiples cambios y actualizaciones a
+                            lo largo de mi carrera.
+                        </p>
+                        <footer class="blockquote-footer text-right">Última actualización: febrero de 2020</footer>
+                    </blockquote>
+
                 </div>
                 <!--Fin del contenido principal de la página-->
             </div><!--Fin contenido principal + nav-->
 
-            <div class="container-fluid row">
-                <div class="col-2 bg-dark fixed-left shadow-lg"><!--Continuación nav-->
+            <div class="container-fluid row"><!--Fila del fondo-->
+                <div class="col-2 bg-dark shadow-lg"><!--Continuación nav-->
                     <a href="https://www.linkedin.com/in/eduardo-brahim-alí-938a87168" 
                     class="float-left ml-4 text-white">
                         <i class="fab fa-linkedin-in"></i>
@@ -75,12 +145,12 @@
                     
                 <div class="col invisible"></div><!--Continuación main-->
 
-                <div class="col-3 bg-dark text-white fixed-right rounded shadow-lg"><!--Footer-->
+                <div class="col-3 bg-dark text-white rounded-top shadow-lg"><!--Footer-->
                         <i class="fab fa-whatsapp">   (+54) 2974-033-186</i>
                         <i class="far fa-envelope">   brahimeduali@gmail.com</i>
                         <i class="fas fa-envelope">   edu_ali_14@hotmail.com</i>
                 </div><!--Fin footer-->
-            </div>
+            </div><!--Fin fila del fondo-->
         </div><!--Fin contenedor principal-->
     </body>
 </html>
