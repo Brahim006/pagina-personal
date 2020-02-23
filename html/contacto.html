@@ -30,40 +30,113 @@
             <div class="container-fluid row"><!--Contenido principal + nav-->
                 <div class="col-2 navbar navbar-expand-sm bg-dark navbar-dar 
                 font-weight-bolder text-center flex-column"><!--Nav-->
-                    <ul class="nav flex-column sticky-top">
+                    <ul class="nav flex-column sticky-top pt-5">
                         <li class="nav-link active list-inline">
-                            <a href="../index.html" class="text-white-50 bg-dark">Intro</a>
+                            <i class="far fa-bookmark text-white-50">
+                                <a href="../index.html" class="text-white-50 bg-dark">Intro</a>
+                            </i>
                         </li>
                         <li class="nav-link list-inline">
-                            <a href="perfil-profesional.html" class="text-white-50 bg-dark">Perfil profesional</a>
+                            <i class="far fa-address-card text-white-50">
+                                <a href="perfil-profesional.html" class="text-white-50 bg-dark">Perfil profesional</a>
+                            </i>
                         </li>
                         <li class="nav-link list-inline">
-                            <a href="servicios.html" class="text-white-50 bg-dark">Servicios</a>
+                            <i class="fas fa-briefcase text-white-50">
+                                <a href="servicios.html" class="text-white-50 bg-dark">Servicios</a>
+                            </i>
                         </li>
                         <li class="nav-link list-inline">
-                            <a href="proyectos.html" class="text-white-50 bg-dark">Proyectos</a>
+                            <i class="fas fa-tools text-white-50">
+                                <a href="proyectos.html" class="text-white-50 bg-dark">Proyectos</a>
+                            </i>
                         </li>
                         <li class="nav-link list-inline">
-                            <a href="metas.html" class="text-white-50 bg-dark">Metas</a>
+                            <i class="fas fa-trophy text-white-50">
+                                <a href="metas.html" class="text-white-50 bg-dark">Metas</a>
+                            </i>
                         </li>
                         <li class="nav-link list-inline">
-                            <a href="links.html" class="text-white-50 bg-dark">Links útiles</a>
+                            <i class="fas fa-link text-white-50">
+                                <a href="links.html" class="text-white-50 bg-dark">Links útiles</a>
+                            </i>
                         </li>
                         <li class="nav-link list-inline">
-                            <a href="contacto.html" class="text-white-50 bg-dark">Contacto</a>
+                            <i class="fas fa-at text-white-50">
+                                <a href="contacto.html" class="text-white-50 bg-dark">Contacto</a>
+                            </i>
                         </li>
                     </ul>
                 </div><!--Fin nav-->
 
                 <!--Contenido principal de la página-->
-                <div class="col">
+                <div class="col pl-4 pr-4">
+                    <div class="ml-5 mr-5"><!--Texto-->
+                        <h1 class="display-4 text-center">Contacto</h1>
+                        <p class="lead">
+                            Si bien mi info de contacto se encuentra al pie de cada página, este formulario sirve
+                            para consultas más específicas.
+                        </p>
+                    </div>
+                    <!--Contenedor del formulario-->
+                    <div class="container bg-dark rounded shadow-lg mt-3 mb-4 w-75">
+                        <form action="" class="pl-4 pr-4 pt-2 pb-2">
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" placeholder="Nombre" 
+                                    class="form-control mt-3 mb-3 ml-4 mr-4 pl-3 w-75">
+                                </div>
+                                <div class="col">
+                                    <input type="text" placeholder="Apellido" 
+                                    class="form-control mt-3 mb-3 ml-4 mr-4 pl-3 w-75">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="number" placeholder="Teléfono" 
+                                    class="form-control mt-3 mb-3 ml-4 mr-4 pl-3 w-75">
+                                </div>
+                                <div class="col">
+                                    <input type="email" placeholder="E-mail" 
+                                    class="form-control mt-3 mb-3 ml-4 mr-4 pl-3 w-75">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col">
+                                    <label for="combobox" class="text-center lead text-white w-50 mx-auto">
+                                        Tipo de consulta</label>
+                                    <select name="combobox" class="form-control w-50 mx-auto">
+                                        <option value="servicios">Servicios</option>
+                                        <option value="proyectos">Proyectos</option>
+                                        <option value="personales">Personales</option>
+                                        <option value="otros">Otros</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <textarea name="consulta" cols="30" rows="10" class="form-control mb-3 w-75 mx-auto"
+                                    placeholder="Consulta"></textarea>
+                                </div>
+                            </div>
+                            <!--Botones-->
+                            <div class="row">
+                                <div class="col d-flex justify-content-center">
+                                    <button formmethod="POST" type="submit" class="rounded">enviar</button>
+                                </div>
+                                <div class="col d-flex justify-content-center">
+                                    <button type="reset" class="rounded">resetear</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div><!--Fin formulario-->
 
                 </div>
                 <!--Fin del contenido principal de la página-->
             </div><!--Fin contenido principal + nav-->
 
             <div class="container-fluid row"><!--Fila del fondo-->
-                <div class="col-2 bg-dark shadow-lg"><!--Continuación nav-->
+                <div class="col-2 bg-dark"><!--Continuación nav-->
                     <a href="https://www.linkedin.com/in/eduardo-brahim-alí-938a87168" 
                     class="float-left ml-4 text-white">
                         <i class="fab fa-linkedin-in"></i>
