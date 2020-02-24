@@ -12,6 +12,16 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
         <!--Inclusión de Awesome Font icons-->
         <script src="https://kit.fontawesome.com/045b7e7bf0.js" crossorigin="anonymous"></script>
+        <!--Scripts para el funcionamiento del ScroolSpy-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <!--Estilo para complementar el diseño en bootstrap-->
+        <style>
+            #main{
+                position: relative;
+            }
+        </style>
     </head>
     <body>
         <div class="container-fluid"><!--Contenedor principal-->
@@ -70,8 +80,125 @@
                 </div><!--Fin nav-->
 
                 <!--Contenido principal de la página-->
-                <div class="col">
+                <div class="col pl-5 pr-5" id="main">
 
+                    <!--Scroll-spy-->
+                    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top rounded-bottom">  
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle lead" href="#" id="navbardrop" data-toggle="dropdown">
+                                Desarrollo web
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#section10">Página WeColour Estilistas</a>
+                                    <a class="dropdown-item" href="#section11">Página personal</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle lead" href="#" id="navbardrop" data-toggle="dropdown">
+                                Java
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#section20">XFramework</a>
+                                    <a class="dropdown-item" href="#section21">Aplicación Cliente - Servidor</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav><!--Fin Scroll-spy-->
+
+                    <p class="lead">
+                        Esta sección la quiero dedicar a hablar un poco de los proyectos que desarrollé y que 
+                        sigo desarrolando, para dar una vista más descriptiva y hablar un poco de los "cómos" y
+                        "por qués". Algunos de estos son proyectos son trabajos finales de los cursos que realizé,
+                        mientras que otros son más proyectos "personales" que desarrollé a medida que iba aprendiendo
+                        a implementar alguna nueva tecnología.
+                    </p>
+
+                    <h1>Desarrollo web</h1>
+                    <h2>Página de We Colour estilistas</h2>
+                    <p class="lead">
+                        Se trata del proyecto final del curso de Diseño web brindado por Coderhouse. Es una 
+                        página relativamente sencilla orientada a cubrir el modelo de negocios y dar a conocer distinta
+                        información sobre servicios y contacto de la peluquería We Colour Estilistas, situada en la ciudad
+                        de Córdoba, Argentina.
+                    </p>
+                    <p class="lead">
+                        Su desarrollo fue lento, ya que obviamente fue el lienzo sobre el que fui plasmando todo lo
+                        aprendido durante el curso, sin embargo intenté dejarla a un nivel más manejable (hablando
+                        del código), en caso de que se requieran hacer posteriores modificaciones. Ya que después de 
+                        todo, la idea es que sea una página funcional para complementar la oferta de comunicación
+                        y publicidad de la peluquería.
+                    </p>
+                    <div class="d-flex"><!--Contenedor carta/info para We colour-->
+                        <div class="card" style="width:400px">
+                            <img class="card-img-top" src="../res/wecolour-ilustrativa.png" alt="Card image">
+                            <div class="card-body">
+                              <h4 class="card-title">We Colour Estilistas</h4>
+                              <p class="card-text">
+                                  <a href="https://ebali.000webhostapp.com/index.html" 
+                                  class="text-dark lead">
+                                    Link a la página oficial de We Colour estilistas.</a>
+                              </p>
+                              <a href="https://github.com/Brahim006/we-colour-estilistas" class="btn btn-primary">
+                                Repositorio GitHub</a>
+                            </div>
+                        </div>
+                        <p class="lead p-3 w-50">
+                            En esta página d mis primeros pasos en dos herramientas que son las bases del desarrollo
+                            web: HTML y CSS.
+                            El punto de inflexión en su desarrollo creo yo fue cuando empecé a implementar SCSS (SASS,
+                            para ser más específico), ya que mejoró enormemente la la forma de organizar el código CSS,
+                            hacíendolo mucho más fácil de leer y modificar.
+                            Sin duda, una de las cosas que más me costó asimilar fue la correcta separación en media queries
+                            para los diseños responsivos, por lo que decidí crear diseños para (además de una versión de 
+                            escritorio) crear una versión móvil y una versión para tablets, tratando de mantener la coherencia
+                            entre todas las versiones.
+                            En la última etapa de desarrollo, decidí incluir un poco de código PHP para el envío de la información
+                            que se escriba en el formulario de contacto. Además, decidí dar mi primer paso en JavaScript, creando
+                            un archivo para poder animar un carrusel de imágenes el cual se encuentra en la sección de
+                            <a href="https://ebali.000webhostapp.com/productos/productos.html">contacto</a>.
+                            Tabién es mi primer proyecto gestionado a través de Git y Github.
+                        </p>
+                        <h3>Qué me enseñó este proyecto:</h3>
+                        <dl>
+                            <dd>- Toda la base del desarrollo web, desde las tecnologías bases hasta el proceso
+                                pre-diseño.
+                            </dd>
+                            <dd>- Una visión del desarrollo de software apuntada a un perfil más comercial.</dd>
+                            <dd>- Una probada al leguaje de programación de JavaScript, que despertó mi interés
+                                para seguir profundizando en él.
+                            </dd>
+                            <dd>- Herramientas de control de versiones, tales como Git y GitHub</dd>
+                        </dl>
+                    </div><!--Fin del contenedor carta/info para We colour-->
+
+                    <h2>Página personal</h2>
+                    <p class="lead">
+                        Como se aclaró en la <a href="../index.html">introducción</a>, esta página sirve tanto
+                        como página personal como proyecto web desarrollado íntegramente a través del framework de
+                        diseño web <a href="https://getbootstrap.com/">CSS Bootstrap</a>, el cual es una herramienta
+                        que ya había usado pero nunca en profundidad, por lo que decidí expandir el conocimiento y
+                        llevarlo a la práctica haciendo algo que a la vez me sea útil.
+                    </p>
+                    <div class="d-flex"><!--Contenedor carta/info para la página personal-->
+                        <div class="card" style="width:400px">
+                            <img class="card-img-top" src="../res/pagina-personal-ilustrativa.png" 
+                            alt="Card image">
+                            <div class="card-body">
+                              <h4 class="card-title">Eduardo Brahim Alí - Página personal</h4>
+                              <p class="card-text">
+                                  <a href="" 
+                                  class="text-dark lead">
+                                    Link al index de la página.</a>
+                              </p>
+                              <a href="https://github.com/Brahim006/pagina-personal" class="btn btn-primary">
+                                Repositorio GitHub</a>
+                            </div>
+                        </div>
+                        <p lead p-3 w-50>
+                            
+                        </p>
+                    </div><!--Contenedor carta/info para la página personal-->
                 </div>
                 <!--Fin del contenido principal de la página-->
             </div><!--Fin contenido principal + nav-->
