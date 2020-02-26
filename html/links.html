@@ -12,6 +12,16 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
         <!--Inclusión de Awesome Font icons-->
         <script src="https://kit.fontawesome.com/045b7e7bf0.js" crossorigin="anonymous"></script>
+        <!--Scripts para el funcionamiento del ScroolSpy-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <!--Estilo para complementar el diseño en bootstrap-->
+        <style>
+            #main{
+                position: relative;
+            }
+        </style>
     </head>
     <body>
         <div class="container-fluid"><!--Contenedor principal-->
@@ -66,7 +76,221 @@
                 </div><!--Fin nav-->
 
                 <!--Contenido principal de la página-->
-                <div class="col">
+                <div class="col pl-5 pr-5" id="main">
+
+                    <!--Scroll-spy-->
+                    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top rounded-bottom">  
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle lead" href="#" id="navbardrop" data-toggle="dropdown">
+                                Libros
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#section10">Página WeColour Estilistas</a>
+                                    <a class="dropdown-item" href="#section11">Página personal</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle lead" href="#" id="navbardrop" data-toggle="dropdown">
+                                Links
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#section20">XFramework</a>
+                                    <a class="dropdown-item" href="#section21">Aplicación Cliente - Servidor</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav><!--Fin Scroll-spy-->
+
+                    <h1>
+                        <i class="fas fa-book-open">  Libros</i>
+                    </h1>
+
+                    <h2>
+                        <i class="fab fa-java">  Java a Fondo de Pablo Sznajdleder</i>
+                    </h2>
+
+                    <div class="d-flex"><!--Contenedor carta + info de Java a Fondo-->
+                        <div class="card" style="width:400px">
+                            <img class="card-img-top" 
+                            src="https://libroweb.alfaomega.com.mx/images/cover3d/9789873832116.png" 
+                            alt="Card image">
+                            <div class="card-body">
+                              <h4 class="card-title">Java a Fondo</h4>
+                              <p class="card-text lead">
+                                Un libro recomendadísimo para aquellos que quieran aprender Java y el desarrollo de
+                                aplicaciones, diseño de programas con un enfoque orientado a objetos y patrones de
+                                diseño.
+                              </p>
+                              <a href="https://articulo.mercadolibre.com.ar/MLA-832042827-libro-java-a-fondo-4ed-curso-de-programacion-_JM?quantity=1#position=3&type=item&tracking_id=1537e60b-6087-4076-af77-525cc753d828" class="btn btn-primary"
+                              target="_blank">
+                                Link a mercadolibre (4° Edición)</a>
+                            </div>
+                        </div>
+                        <p class="lead p-3 w-50">
+                            Se trata de, tal vez, uno de los libros más completos en lo que respecta a Java 
+                            (por lo menos hasta la SE 8). Si bien el libro tiene un enfoque predominantemente
+                            práctico, esto no quiere decir que no sea profundo, ya que en realidad engloba una
+                            gran cantidad de temas siendo un libro que te puede llevar desde un programador inicial
+                            a uno con un conocimiento bastante fuerte en el uso del lenguaje.
+                            Si bien no tiene ejercícios, cuenta con bastante código por el cual desarrolla todos los temas
+                            tratados, el cual recomiendo analizar, probar y comentar para tener un entendimiento completo.
+                            Además no sólo intenta enseñarnos las bases del lenguaje, si no que tembién toma capítulos
+                            enteros para aplicar el conocimiento en el desarrollo de aplicaciones reales sin escatimar
+                            en detenerse en conceptos como patrones de diseño y buenas prácticas para llevarnos a
+                            adquirir un fuerte punto de vista como desarrolladores de aplicaciones.
+                            Como cereza del pastel, en sus últimos capítulos incluye una introducción a Spring y
+                            Hibernate, dos de los frameworks más usados en la actualidad (no sin antes detenerse
+                            a explicarnos qué es un framework y detenerse a desarrollar y probar algunos).
+                            Personalmente, me gusta el enfoque que tiene este libro ya que como dije no se detiene
+                            sólo en enseñarnos el lenguaje, si no que va más allá enseñándonos a programar.
+                        </p>
+                    </div><!--Fin contenedor carta + info de Java a Fondo-->
+
+                    <h2>
+                        <i class="far fa-window-restore">  Desarrollo web con Java</i>
+                    </h2>
+                    <div class="d-flex"><!--Contenedor carta + info de Desarrollo web con Java-->
+                        <p class="lead p-3 w-50">
+                            Es un libro corto y sencillo (y barato, por qué no) que habla del desarrollo web con Java. Si bien no lo terminé todavía, lo encuentro bastante interesante ya que
+                            se detiene en algunos conceptos de la programación de aplicaciones web que no he
+                            visto en otros recursos que hablen sobre el tema.
+                            No estoy muy seguro de qué tan actualizado está en el tema ya que tienen unos cuantos años, pero parece ser bueno para los que quieran hacer "algo nuevo" en Java.
+                            Cuenta con algunos ejercícios y código bastante claro que ayudan a adentrarse bien
+                            en sus conceptos, siendo simple pero conciso.
+                            Una cosa a tener en cuenta es que antes de poder usarlo se requieren conocimientos
+                            digamos que "intermedios" de Java (funcionamiento de servidores, diseños de aplicaciones orientado a objetos, uso de frameworks e interfaces y flujos de datos), además de tener un dominio aunque sea básico de HTML.
+                        </p>
+                        <div class="card" style="width:400px">
+                            <img class="card-img-top" src="http://www.redusers.com/noticias/wp-content/uploads/2015/01/imagen_posteo1.gif" alt="Card image">
+                            <div class="card-body">
+                              <h4 class="card-title">Desarrollo web con Java desde Cero</h4>
+                              <p class="card-text">
+                                El libro se presenta como complemento a 
+                                <a href="http://www.redusers.com/noticias/publicaciones/java-desde-cero/">
+                                Java desde Cero</a> de la misma editorial, cuenta con varios ejemplos integradores además de preguntas y ejercícios que invitan a re-leer y profundizar sobre los contenidos de cada capítulo.
+                              </p>
+                              <a href="http://www.redusers.com/noticias/publicaciones/desarrollo-web-con-java-desde-cero/" class="btn btn-primary"
+                              target="_blank">
+                                Página de la editorial</a>
+                            </div>
+                        </div>
+                    </div><!--Fin contenedor carta + info de Desarrollo web con Java-->
+
+                    <h2>
+                        <i class="fab fa-html5">  HTML, CSS y JavaScript de José Luján</i>
+                    </h2>
+
+                    <div class="d-flex"><!--Contenedor carta + info de web José Luján-->
+                        <div class="card" style="width:400px">
+                            <img class="card-img-top" src="https://www.alfaomega.com.mx/media/catalog/product/cache/4/image/728x/9df78eab33525d08d6e5fb8d27136e95/1/_/1_10_21.jpg" 
+                            alt="Card image">
+                            <div class="card-body">
+                              <h4 class="card-title">HTML, CSS y JavaScript</h4>
+                              <p class="card-text">
+                                
+                              </p>
+                              <a href="https://articulo.mercadolibre.com.ar/MLA-800485344-html-5-css-y-javascript-lujan-castillo-jose-dimas-_JM?quantity=1"
+                              target="_blank">
+                                Link a Mercado Libre</a>
+                            </div>
+                        </div>
+                        <p class="lead p-3 w-50">
+                            Es un libro sobre el que tengo sentimientos encontrados: por un lado lo encuentro demasiado básico, que repite
+                            mucho código y no tiene grandes ambiciones.
+                            Sin embargo, reconozco que es extremadamente amigable para introducirse a estos tres lenguajes y cómo se relacionan entre sí, contando con varias imágenes ilustrativas, texto conciso y bien separado por temas.
+                            Además, puede servir como material de consulta sobre algunos temas básicos.
+
+                        </p>
+                    </div><!--Fin contenedor carta + info de web José Luján-->
+
+                    <h2>
+                        <i class="fab fa-android">  Android Studio - Aprende a desarrollar aplicaciones</i>
+                    </h2>
+
+                    <div class="d-flex"><!--Contenedor carta + info de android José Luján-->
+                        <p class="lead p-3 w-50">
+                            Este libro, del mismo autor que el anterior (José Luján), tiene la misma filosofía
+                            pero orientada al deasarrollo de aplicaciones nativas en Android con Java.
+                            Es un buen punto de introducción, además de que habla sobre conceptos básicos de
+                            programación orientada a objetos antes de comenzar a programar la interactividad en
+                            Java.
+                            Por lo demás, no escatima en detenerse a explicar conceptos propios del desarrollo
+                            móvil, como lo son distintos tamaños y densidades de pantalla, actividades y acceso
+                            a los dstintos sensores, además de un fuerte manejo del IDE de Android Estudio.
+                        </p>
+                        <div class="card" style="width:400px">
+                            <img class="card-img-top" 
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfskSklCVCA2lCutpsuJ_DQdw5iAddVqUdOoDwuOQQaXf_A11U&s" 
+                            alt="Card image">
+                            <div class="card-body">
+                              <h4 class="card-title">Android Studio de José Luján</h4>
+                              <a href="https://articulo.mercadolibre.com.ar/MLA-676100958-libro-android-studio-aprende-a-desarrollar-aplicaciones-_JM?quantity=1"
+                              target="_blank">
+                                Link a Mercado Libre</a>
+                            </div>
+                        </div>
+                    </div><!--Fin contenedor carta + info de android José Luján-->
+
+                    <h1>
+                        <i class="fas fa-link">  Links útiles</i>
+                    </h1>
+
+                    <h2>
+                        <i class="fas fa-ethernet">  W3Schools</i>
+                    </h2>
+
+                    <p class="lead">
+                        W3Schools es un sitio provisto por la
+                        <a href="https://webfoundation.org/"> World Wide Web Foundation</a>, e incluye todo tipo de tutoriales a fondo sobre diferentes lenguejes de programación y herramientas de desarrollo.
+                        Lo conocí cuando estaba haciendo mi
+                        <a href="https://www.coderhouse.com/online/disenador-web-online">
+                        curso de Diseño Web</a> y terminó siendo mi referencia para consultas cuando estoy desarrollando algún proyecto con tecnologías como HTML y CSS.
+                        Actualmente, esta página está desarrollada tomando como guía la sección de
+                        Bootstrap 4, la cual encuentro muy completa y me enseñó a tener un manejo diferente de este framework que había usado anteriormente, pero nunca a este nivel.
+                    </p>
+
+                    <button type="button" class="btn btn-primary bg-dark border-dark" data-toggle="collapse" data-target="#linksW3">Links útiles</button>
+                    <div id="linksW3" class="collapse">
+                        <p class="pl-3">
+                            <a href="https://www.w3schools.com/" target="_blank">Página principal de W3Schools</a>
+                            </br>
+                            <a href="https://www.w3schools.com/html/default.asp" target="_blank">
+                            Sección de HTML</a>
+                            </br>
+                            <a href="https://www.w3schools.com/css/default.asp" target="_blank">Sección de CSS</a>
+                            </br>
+                            <a href="https://www.w3schools.com/sass/default.asp" target="_blank">
+                            Sección de SASS</a>
+                            </br>
+                            <a href="https://www.w3schools.com/bootstrap4/default.asp" target="_blank">
+                            Sección de Bootstrap 4</a>
+                            </br>
+                            <a href="https://www.w3schools.com/js/default.asp" target="_blank">
+                            Sección de JavaScript</a>
+                        </p>
+                    </div>
+
+                    <h2>
+                        <i class="fab fa-font-awesome">  Font Awesome</i>
+                    </h2>
+
+                    <p class="lead">
+                        Font Awesome es una plataforma que provée de íconos para incluir en nuestras páginas 
+                        de una forma sencilla y sin otro requerimiento que registrarse en la página. Si bien ofrece un servicio premium, la versión gratuita de por sí ofrece una cantidad importante de íconos de todo tipo.
+                        Su uso es sencillo, sólo requiere la inclución de una línea de <kbd>script</kbd> dentro
+                        del <kbd>head</kbd> de nuestro documento HTML y a partir de ahí se pueden empezar a incluir los íconos como etiquetas que serán tratadas como texto por el navegador (por lo menos en lo que a coloreado y tamaño respecta).
+                        Todos los íconos incluidos en este sitio provienen de este servicio.
+                    </p>
+
+                    <button type="button" class="btn btn-primary bg-dark border-dark" data-toggle="collapse" data-target="#linksFAwe">Links útiles</button>
+                    <div id="linksFAwe" class="collapse">
+                        <p>
+                            <a href="https://fontawesome.com/" target="_blank">Página de Font Awesome</a>
+                            </br>
+                            <a href="https://www.w3schools.com/bootstrap4/bootstrap_icons.asp" target="_blank">Ejemplo de su utilización en W3Schools</a>
+                        </p>
+                    </div>
 
                 </div>
                 <!--Fin del contenido principal de la página-->
