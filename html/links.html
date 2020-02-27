@@ -76,54 +76,43 @@
                 </div><!--Fin nav-->
 
                 <!--Contenido principal de la página-->
-                <div class="col pl-5 pr-5" id="main">
+                <div class="col pl-5 pr-5" id="main" data-spy="scroll" data-target="#scrollnav" data-offset="50">
 
                     <!--Scroll-spy-->
-                    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top rounded-bottom">  
+                    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top rounded-bottom"
+                    id="scrollnav">  
                         <ul class="navbar-nav">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle lead" href="#" id="navbardrop" data-toggle="dropdown">
-                                Libros
-                                </a>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#section10">Página WeColour Estilistas</a>
-                                    <a class="dropdown-item" href="#section11">Página personal</a>
-                                </div>
+                            <li class="nav-item">
+                                <a class="nav-link lead" href="#section1">Libros</a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle lead" href="#" id="navbardrop" data-toggle="dropdown">
-                                Links
-                                </a>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#section20">XFramework</a>
-                                    <a class="dropdown-item" href="#section21">Aplicación Cliente - Servidor</a>
-                                </div>
+                            <li class="nav-item">
+                                <a class="nav-link lead" href="#section2">Links</a>
                             </li>
                         </ul>
                     </nav><!--Fin Scroll-spy-->
 
-                    <h1>
+                    <h1 class="display-3 mt-5 mb-5" id="section1">
                         <i class="fas fa-book-open">  Libros</i>
                     </h1>
 
-                    <h2>
+                    <h2 class="mb-4">
                         <i class="fab fa-java">  Java a Fondo de Pablo Sznajdleder</i>
                     </h2>
 
                     <div class="d-flex"><!--Contenedor carta + info de Java a Fondo-->
                         <div class="card" style="width:400px">
-                            <img class="card-img-top" 
-                            src="https://libroweb.alfaomega.com.mx/images/cover3d/9789873832116.png" 
-                            alt="Card image">
+                            <img class="card-img-top mt-5" 
+                            src="https://www.alfaomega.com.mx/media/catalog/product/cache/1/image/728x/9df78eab33525d08d6e5fb8d27136e95/v/i/vista1_1_11.png" 
+                            alt="Imagen ilustrativa del libro Java a Fondo">
                             <div class="card-body">
-                              <h4 class="card-title">Java a Fondo</h4>
+                              <h3 class="card-title font-weight-bold text-center">Java a Fondo</h3>
                               <p class="card-text lead">
                                 Un libro recomendadísimo para aquellos que quieran aprender Java y el desarrollo de
                                 aplicaciones, diseño de programas con un enfoque orientado a objetos y patrones de
                                 diseño.
                               </p>
-                              <a href="https://articulo.mercadolibre.com.ar/MLA-832042827-libro-java-a-fondo-4ed-curso-de-programacion-_JM?quantity=1#position=3&type=item&tracking_id=1537e60b-6087-4076-af77-525cc753d828" class="btn btn-primary"
-                              target="_blank">
+                              <a href="https://articulo.mercadolibre.com.ar/MLA-832042827-libro-java-a-fondo-4ed-curso-de-programacion-_JM?quantity=1#position=3&type=item&tracking_id=1537e60b-6087-4076-af77-525cc753d828" 
+                              class="btn btn-primary bg-dark border-dark" target="_blank">
                                 Link a mercadolibre (4° Edición)</a>
                             </div>
                         </div>
@@ -147,8 +136,8 @@
                         </p>
                     </div><!--Fin contenedor carta + info de Java a Fondo-->
 
-                    <h2>
-                        <i class="far fa-window-restore">  Desarrollo web con Java</i>
+                    <h2 class="mt-4 mb-4">
+                        <i class="far fa-window-restore">  Desarrollo web con Java desde cero</i>
                     </h2>
                     <div class="d-flex"><!--Contenedor carta + info de Desarrollo web con Java-->
                         <p class="lead p-3 w-50">
@@ -162,49 +151,51 @@
                             digamos que "intermedios" de Java (funcionamiento de servidores, diseños de aplicaciones orientado a objetos, uso de frameworks e interfaces y flujos de datos), además de tener un dominio aunque sea básico de HTML.
                         </p>
                         <div class="card" style="width:400px">
-                            <img class="card-img-top" src="http://www.redusers.com/noticias/wp-content/uploads/2015/01/imagen_posteo1.gif" alt="Card image">
+                            <img class="card-img-top" src="http://www.redusers.com/noticias/wp-content/uploads/2015/01/imagen_posteo1.gif" 
+                            alt="Imagen ilustrativa del libro Desarrollo web con Java">
                             <div class="card-body">
-                              <h4 class="card-title">Desarrollo web con Java desde Cero</h4>
+                              <h3 class="card-title font-weight-bold text-center">Desarrollo web con Java desde Cero</h3>
                               <p class="card-text">
                                 El libro se presenta como complemento a 
-                                <a href="http://www.redusers.com/noticias/publicaciones/java-desde-cero/">
+                                <a href="http://www.redusers.com/noticias/publicaciones/java-desde-cero/" class="text-dark" target="_blank">
                                 Java desde Cero</a> de la misma editorial, cuenta con varios ejemplos integradores además de preguntas y ejercícios que invitan a re-leer y profundizar sobre los contenidos de cada capítulo.
                               </p>
-                              <a href="http://www.redusers.com/noticias/publicaciones/desarrollo-web-con-java-desde-cero/" class="btn btn-primary"
-                              target="_blank">
+                              <a href="http://www.redusers.com/noticias/publicaciones/desarrollo-web-con-java-desde-cero/" 
+                              class="btn btn-primary bg-dark border-dark" target="_blank">
                                 Página de la editorial</a>
                             </div>
                         </div>
                     </div><!--Fin contenedor carta + info de Desarrollo web con Java-->
 
-                    <h2>
+                    <h2 class="mt-4 mb-4">
                         <i class="fab fa-html5">  HTML, CSS y JavaScript de José Luján</i>
                     </h2>
 
                     <div class="d-flex"><!--Contenedor carta + info de web José Luján-->
                         <div class="card" style="width:400px">
                             <img class="card-img-top" src="https://www.alfaomega.com.mx/media/catalog/product/cache/4/image/728x/9df78eab33525d08d6e5fb8d27136e95/1/_/1_10_21.jpg" 
-                            alt="Card image">
+                            alt="Imagen ilustrativa del libro HTML, CSS y JavaScript">
                             <div class="card-body">
-                              <h4 class="card-title">HTML, CSS y JavaScript</h4>
+                              <h3 class="card-title font-weight-bold text-center">HTML, CSS y JavaScript</h3>
                               <p class="card-text">
                                 
                               </p>
                               <a href="https://articulo.mercadolibre.com.ar/MLA-800485344-html-5-css-y-javascript-lujan-castillo-jose-dimas-_JM?quantity=1"
-                              target="_blank">
+                              class="btn btn-primary bg-dark border-dark" target="_blank">
                                 Link a Mercado Libre</a>
                             </div>
                         </div>
                         <p class="lead p-3 w-50">
                             Es un libro sobre el que tengo sentimientos encontrados: por un lado lo encuentro demasiado básico, que repite
-                            mucho código y no tiene grandes ambiciones.
-                            Sin embargo, reconozco que es extremadamente amigable para introducirse a estos tres lenguajes y cómo se relacionan entre sí, contando con varias imágenes ilustrativas, texto conciso y bien separado por temas.
+                            mucho código y no suele profundizar mucho.
+                            Sin embargo, reconozco que es extremadamente amigable para introducirse a estos tres lenguajes y cómo se relacionan entre sí, 
+                            contando con varias imágenes ilustrativas, texto conciso y bien separado por temas.
                             Además, puede servir como material de consulta sobre algunos temas básicos.
 
                         </p>
                     </div><!--Fin contenedor carta + info de web José Luján-->
 
-                    <h2>
+                    <h2 class="mt-4 mb-4">
                         <i class="fab fa-android">  Android Studio - Aprende a desarrollar aplicaciones</i>
                     </h2>
 
@@ -222,29 +213,29 @@
                         <div class="card" style="width:400px">
                             <img class="card-img-top" 
                             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfskSklCVCA2lCutpsuJ_DQdw5iAddVqUdOoDwuOQQaXf_A11U&s" 
-                            alt="Card image">
+                            alt="Imagen ilustrativa del libro Desarrollo Android">
                             <div class="card-body">
-                              <h4 class="card-title">Android Studio de José Luján</h4>
+                              <h3 class="card-title font-weight-bold text-center">Android Studio de José Luján</h3>
                               <a href="https://articulo.mercadolibre.com.ar/MLA-676100958-libro-android-studio-aprende-a-desarrollar-aplicaciones-_JM?quantity=1"
-                              target="_blank">
+                              class="btn btn-primary bg-dark border-dark" target="_blank">
                                 Link a Mercado Libre</a>
                             </div>
                         </div>
                     </div><!--Fin contenedor carta + info de android José Luján-->
 
-                    <h1>
+                    <h1 class="display-3 mt-5 mb-5" id="section2">
                         <i class="fas fa-link">  Links útiles</i>
                     </h1>
 
-                    <h2>
-                        <i class="fas fa-ethernet">  W3Schools</i>
+                    <h2 class="mb-4">
+                        <i class="fas fa-pencil-ruler">  W3Schools</i>
                     </h2>
 
                     <p class="lead">
                         W3Schools es un sitio provisto por la
-                        <a href="https://webfoundation.org/"> World Wide Web Foundation</a>, e incluye todo tipo de tutoriales a fondo sobre diferentes lenguejes de programación y herramientas de desarrollo.
+                        <a href="https://webfoundation.org/" class="text-dark" target="_blank"> World Wide Web Foundation</a>, e incluye todo tipo de tutoriales a fondo sobre diferentes lenguejes de programación y herramientas de desarrollo.
                         Lo conocí cuando estaba haciendo mi
-                        <a href="https://www.coderhouse.com/online/disenador-web-online">
+                        <a href="https://www.coderhouse.com/online/disenador-web-online" class="text-dark" target="_blank">
                         curso de Diseño Web</a> y terminó siendo mi referencia para consultas cuando estoy desarrollando algún proyecto con tecnologías como HTML y CSS.
                         Actualmente, esta página está desarrollada tomando como guía la sección de
                         Bootstrap 4, la cual encuentro muy completa y me enseñó a tener un manejo diferente de este framework que había usado anteriormente, pero nunca a este nivel.
@@ -253,25 +244,27 @@
                     <button type="button" class="btn btn-primary bg-dark border-dark" data-toggle="collapse" data-target="#linksW3">Links útiles</button>
                     <div id="linksW3" class="collapse">
                         <p class="pl-3">
-                            <a href="https://www.w3schools.com/" target="_blank">Página principal de W3Schools</a>
+                            <a href="https://www.w3schools.com/" target="_blank" class="text-dark">
+                                Página principal de W3Schools</a>
                             </br>
-                            <a href="https://www.w3schools.com/html/default.asp" target="_blank">
+                            <a href="https://www.w3schools.com/html/default.asp" target="_blank" class="text-dark">
                             Sección de HTML</a>
                             </br>
-                            <a href="https://www.w3schools.com/css/default.asp" target="_blank">Sección de CSS</a>
+                            <a href="https://www.w3schools.com/css/default.asp" target="_blank" class="text-dark">
+                                Sección de CSS</a>
                             </br>
-                            <a href="https://www.w3schools.com/sass/default.asp" target="_blank">
+                            <a href="https://www.w3schools.com/sass/default.asp" target="_blank" class="text-dark">
                             Sección de SASS</a>
                             </br>
-                            <a href="https://www.w3schools.com/bootstrap4/default.asp" target="_blank">
+                            <a href="https://www.w3schools.com/bootstrap4/default.asp" target="_blank" class="text-dark">
                             Sección de Bootstrap 4</a>
                             </br>
-                            <a href="https://www.w3schools.com/js/default.asp" target="_blank">
+                            <a href="https://www.w3schools.com/js/default.asp" target="_blank" class="text-dark">
                             Sección de JavaScript</a>
                         </p>
                     </div>
 
-                    <h2>
+                    <h2 class="mb-4 mt-4">
                         <i class="fab fa-font-awesome">  Font Awesome</i>
                     </h2>
 
@@ -286,19 +279,20 @@
                     <button type="button" class="btn btn-primary bg-dark border-dark" data-toggle="collapse" data-target="#linksFAwe">Links útiles</button>
                     <div id="linksFAwe" class="collapse">
                         <p>
-                            <a href="https://fontawesome.com/" target="_blank">Página de Font Awesome</a>
+                            <a href="https://fontawesome.com/" target="_blank" class="text-dark">Página de Font Awesome</a>
                             </br>
-                            <a href="https://www.w3schools.com/bootstrap4/bootstrap_icons.asp" target="_blank">Ejemplo de su utilización en W3Schools</a>
+                            <a href="https://www.w3schools.com/bootstrap4/bootstrap_icons.asp" target="_blank" class="text-dark">
+                            Ejemplo de su utilización en W3Schools</a>
                         </p>
                     </div>
 
-                    <h2>
+                    <h2 class="mb-4 mt-4"> 
                         <i class="fas fa-laptop-code">  Visual Studio Code</i>
                     </h2>
 
                     <p class="lead">
                         Se trata del IDE que más uso para desarrollo web (ya que para proyectos en Java uso
-                        mayormente <a href="https://netbeans.org/">NetBeans</a>).
+                        mayormente <a href="https://netbeans.org/" class="text-dark" target="_blank">NetBeans</a>).
                         Lo más destacable desde mi punto de vista es la cantidad de lenguajes que usa y la forma
                         sencilla en la que se maneja, haciéndolo ideal para proyectos en los que se combinan
                         distintos lenguejes y tecnologías. Además, se integra perfectamente con GitBash haciendo
@@ -309,9 +303,9 @@
                     <button type="button" class="btn btn-primary bg-dark border-dark" data-toggle="collapse" data-target="#linksVSCode">Links útiles</button>
                     <div id="linksVSCode" class="collapse">
                         <p>
-                            <a href="https://code.visualstudio.com/" target="_blank">Página de VS Code</a>
+                            <a href="https://code.visualstudio.com/" target="_blank" class="text-dark">Página de VS Code</a>
                             </br>
-                            <a href="https://lemoncode.net/lemoncode-blog/2017/12/12/git-y-visual-studio-code" 
+                            <a href="https://lemoncode.net/lemoncode-blog/2017/12/12/git-y-visual-studio-code"  class="text-dark"
                             target="_blank">Pequeña guía de uso Git/VS Code</a>
                         </p>
                     </div>
