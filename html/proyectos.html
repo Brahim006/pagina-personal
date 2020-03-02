@@ -25,7 +25,7 @@
     </head>
     <body>
         <div class="container-fluid"><!--Contenedor principal-->
-            <div class="container-fluid row bg-dark text-light shadow-lg"><!--Header-->
+            <div class="container-fluid row bg-dark text-light shadow-lg rounded-right"><!--Header-->
                 <div class="col">
                     <h1 class="font-weight-bold text-center display-3">
                         <i class="fas fa-code">  Eduardo Brahim Alí</i>
@@ -174,17 +174,6 @@
                             Tabién es mi primer proyecto gestionado a través de Git y Github.
                         </p>
                     </div><!--Fin del contenedor carta/info para We colour-->
-                    <h3 class="ml-3">Qué me enseñó este proyecto:</h3>
-                        <dl class="ml-3">
-                            <dd>- Toda la base del desarrollo web, desde las tecnologías bases hasta el proceso
-                                pre-diseño.
-                            </dd>
-                            <dd>- Una visión del desarrollo de software apuntada a un perfil más comercial.</dd>
-                            <dd>- Una probada al leguaje de programación de JavaScript, que despertó mi interés
-                                para seguir profundizando en él.
-                            </dd>
-                        <dd>- Herramientas de control de versiones, tales como Git y GitHub</dd>
-                    </dl>
 
                     <h2 class="my-4" id="section11">
                         <i class="fas fa-blog">  Página personal</i>
@@ -204,11 +193,6 @@
                             <div class="card-body">
                               <h3 class="card-title font-weight-bold text-center">
                                   Eduardo Brahim Alí - Página personal</h3>
-                              <p class="card-text">
-                                  <a href="../index.html"
-                                  class="text-dark lead">
-                                    Link al index de la página.</a>
-                              </p>
                               <a href="https://github.com/Brahim006/pagina-personal" 
                               class="btn btn-primary bg-dark border-dark">
                                 Repositorio GitHub</a>
@@ -257,11 +241,6 @@
                             alt="Imagen ilustrativa de XFramework">
                             <div class="card-body">
                               <h3 class="card-title font-weight-bold text-center">XFramework</h3>
-                              <p class="card-text">
-                                  <a href=""
-                                  class="text-dark lead">
-                                    Parseo de contenido XML para Java</a>
-                              </p>
                               <a href="https://github.com/Brahim006/XFramework" 
                               class="btn btn-primary bg-dark border-dark mt-5">
                                 Repositorio GitHub</a>
@@ -328,7 +307,7 @@
                             <div class="card-body">
                               <h3 class="card-title font-weight-bold text-center">
                                 Vista de la aplicación cliente</h3>
-                                <p class="card-text">
+                                <p class="card-text lead">
                                     La interfaz intenta ser eficaz a la vez que intuitiva.
                                 </p>
                               <a href="https://github.com/Brahim006/cliente-servidor-en-java/tree/master/Aplicacion%20Cliente" 
@@ -428,7 +407,7 @@
 
                     <p class="lead">
                         Un punto interesante de este proyecto es el uso de XFramework para acceder a la parametrización de 
-                        información relativa tanto a la conexión entre las partes (ip y puerto), como a otros parámetros internos
+                        información relativa tanto a la conexión entre las partes (IP y puerto), como a otros parámetros internos
                         del pool de conexión en el archivo de
                         <a href="https://github.com/Brahim006/cliente-servidor-en-java/blob/master/Aplicacion%20Servidor/configuracion.xml"
                         target="_blank" class="text-dark">
@@ -444,18 +423,22 @@
                         continuarlo hasta que tenga un aspecto más "profesional", además de ciertos cambios respecto a la
                         versión publicada:
                     </p>
-                    <dl>
-                        <dd>- Actualmente me encuentro estudiando el uso de Hibernate para Java, por lo que seguramente termine
+                    <dl class="lead ml-4 lead">
+                        <dd>- Actualmente me encuentro estudiando el uso de 
+                            <a href="https://hibernate.org/" target="_blank" class="text-dark">Hibernate</a>
+                            para Java, por lo que seguramente termine
                             usándolo por lo que descartaría ó modificaría buena parte de la clases relacionadas al acceso a la 
                             base de datos.
                         </dd>
                         <dd>- La forma en la que el servidor gestiona las conexiones con los clientes se siente un poco rudimentaria,
-                            por lo que me inclino más a encontrar alguna forma más eficiente para esto.
+                            por lo que me inclino más a encontrar alguna forma más eficiente y moderna para esto.
                         </dd>
                         <dd>- La base de datos HSQLDB se debe iniciar desde consola (iniciar la base de datos antes que el
                             servidor es mandatorio para el correcto funcionamiento de la aplicación) y creo firmemente que 
-                            es posible solventar esto haciendo uso de la introspección de clases provista por Java, área en la
-                            que todavía no cuento con muchos conocimientos.</dd>
+                            es posible solventar esto haciendo uso de la 
+                            <a href="https://docs.oracle.com/javase/8/docs/api/java/beans/Introspector.html" 
+                            target="_blank" class="text-dark">API de introspección de clases provista por Java</a>,
+                            área en la que todavía no cuento con muchos conocimientos, pero veo gran utilidad.</dd>
                         <dd>- Dentro de la aplicación servidor se encuentra la clase
                             <a href="https://github.com/Brahim006/cliente-servidor-en-java/blob/master/Aplicacion%20Servidor/src/com/domain/facade/FacadeLocal.java"
                             target="_blank" class="text-dark">
