@@ -8,6 +8,7 @@
         <meta name="author" content="Eduardo Brahim Alí">
         <meta name="description" content="Eduardo Brahim Alí, diseñador web - Mis metas a corto y largo plazo, tanto en el plano laboral como en el educativo.">
         <meta name="keywords" content="Eduardo Brahim Alí, diseñador web, programacion Java, metas personales">
+        <link rel="shortcut icon" href="../res/favicon.ico">
         <!--Inclusión de Bootstrap CSS-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
         <!--Inclusión de Awesome Font icons-->
@@ -28,54 +29,101 @@
             </div><!--Fin header-->
             
             <div class="container-fluid row"><!--Contenido principal + nav-->
-                <div class="col-2 navbar navbar-expand-sm bg-dark navbar-dar 
-                font-weight-bolder text-center flex-column"><!--Nav-->
-                    <ul class="nav flex-column sticky-top pt-5">
+                
+                <!--Nav colapsible para versión xs-->
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark rounded-bottom sticky-top w-100 d-sm-none">
+                    <a class="navbar-brand lead" href="#">Navegar</a>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <i class="fas fa-link"></i>
+                    </button>
+
+                    <!--Links-->
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="../index.html" class="nav-link text-white-50 bg-dark">Intro</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="perfil-profesional.html" class="nav-link text-white-50 bg-dark">Perfil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="servicios.html" class="nav-link text-white-50 bg-dark">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="proyectos.html" class="nav-link text-white-50 bg-dark">Proyectos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="metas.html" class="nav-link text-white-50 bg-dark">Metas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="links.html" class="nav-link text-white-50 bg-dark">Links</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contacto.html" class="nav-link text-white-50 bg-dark">Contacto</a>
+                            </li>
+                            <li class="nav-item my-2">
+                                <a href="https://www.linkedin.com/in/eduardo-brahim-alí-938a87168" 
+                                class="float-right text-white">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item my-2">
+                                <a href="https://github.com/Brahim006" class="float-right text-white">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <!--Fin nav colapsible para versión xs-->
+
+                <!--Nav para versiones con mayor tamaño de pantalla-->
+                <div class="navbar navbar-expand-sm bg-dark navbar-dar font-weight-bolder text-center flex-column d-none d-sm-block
+                col-sm-3 col-md-2"><!--Nav-->
+                    <ul class="nav flex-column sticky-top pt-sm-3 pt-md-5">
                         <li class="nav-link active list-inline">
                             <i class="far fa-bookmark text-white-50">
                                 <a href="../index.html" class="text-white-50 bg-dark">Intro</a>
                             </i>
                         </li>
-                        <li class="nav-link list-inline">
+                        <li class="nav-link list-inline mt-md-3 mt-lg-2">
                             <i class="far fa-address-card text-white-50">
                                 <a href="perfil-profesional.html" class="text-white-50 bg-dark">Perfil</a>
                             </i>
                         </li>
-                        <li class="nav-link list-inline">
+                        <li class="nav-link list-inline mt-md-3 mt-lg-2">
                             <i class="fas fa-briefcase text-white-50">
                                 <a href="servicios.html" class="text-white-50 bg-dark">Servicios</a>
                             </i>
                         </li>
-                        <li class="nav-link list-inline">
+                        <li class="nav-link list-inline mt-md-3 mt-lg-2">
                             <i class="fas fa-tools text-white-50">
                                 <a href="proyectos.html" class="text-white-50 bg-dark">Proyectos</a>
                             </i>
                         </li>
-                        <li class="nav-link list-inline">
+                        <li class="nav-link list-inline mt-md-3 mt-lg-2">
                             <i class="fas fa-trophy text-white-50">
                                 <a href="metas.html" class="text-white-50 bg-dark">Metas</a>
                             </i>
                         </li>
-                        <li class="nav-link list-inline">
+                        <li class="nav-link list-inline mt-md-3 mt-lg-2">
                             <i class="fas fa-link text-white-50">
-                                <a href="links.html" class="text-white-50 bg-dark">Links/material</a>
+                                <a href="links.html" class="text-white-50 bg-dark">
+                                    <span class="d-sm-none d-lg-inline d-xl-inline">Links/</span>Material
+                                </a>
                             </i>
                         </li>
-                        <li class="nav-link list-inline">
+                        <li class="nav-link list-inline mt-md-3 mt-lg-2">
                             <i class="fas fa-at text-white-50">
                                 <a href="contacto.html" class="text-white-50 bg-dark">Contacto</a>
                             </i>
                         </li>
                     </ul>
-                </div><!--Fin nav-->
+                </div><!--Fin nav extendido-->
 
                 <!--Contenido principal de la página-->
-                <div class="col  pl-5 pr-5">
-
-                    <div class="alert alert-dark alert-dismissible mt-4"><!--Cartel de alerta-->
-                        <button type="button" class="close" data-dismiss="alert">&times;</button>
-                        <strong>Atención</strong> versión móvil no disponible aún.
-                    </div>
+                <div class="col-sm pl-lg-5 pr-lg-5">
 
                     <h1 class="display-4 pl-5 mt-5 mb-5">
                         <i class="fas fa-trophy">  Metas</i>
@@ -169,19 +217,19 @@
             </div><!--Fin contenido principal + nav-->
 
             <div class="container-fluid row"><!--Fila del fondo-->
-                <div class="col-2 bg-dark"><!--Continuación nav-->
+                <div class="bg-dark d-none d-sm-block col-sm-3 col-md-2"><!--Continuación nav-->
                     <a href="https://www.linkedin.com/in/eduardo-brahim-alí-938a87168" 
-                    class="float-left ml-4 text-white">
+                    class="float-left text-white ml-lg-4">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
-                    <a href="https://github.com/Brahim006" class="float-right mr-4 text-white">
+                    <a href="https://github.com/Brahim006" class="float-right text-white mr-lg-4">
                         <i class="fab fa-github"></i>
                     </a>
                 </div><!--Fin continuación nav-->
                     
-                <div class="col invisible"></div><!--Continuación main-->
+                <div class="invisible col-sm"></div><!--Continuación main-->
 
-                <div class="col-3 bg-dark text-white rounded-top shadow-lg"><!--Footer-->
+                <div class="bg-dark text-white rounded-top shadow-lg col-sm-6 col-md-4 col-lg-3"><!--Footer-->
                         <i class="fab fa-whatsapp">   (+54) 2974-033-186</i>
                         <i class="far fa-envelope">   brahimeduali@gmail.com</i>
                         <i class="fas fa-envelope">   edu_ali_14@hotmail.com</i>
