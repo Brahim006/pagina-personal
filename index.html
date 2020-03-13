@@ -22,14 +22,65 @@
         <div class="container-fluid"><!--Contenedor principal-->
             <div class="container-fluid row bg-dark text-light shadow-lg rounded-right"><!--Header-->
                 <div class="col-md col-lg col-xl">
-                    <h1 class="font-weight-bold text-center display-3">
-                        <i class="fas fa-code">  Eduardo Brahim Alí</i>
+                    <h1 class="font-weight-bold text-center py-sm-3">
+                        <i class="fas fa-code display-3 d-none d-sm-inline">  Eduardo Brahim Alí</i>
+                        <i class="fas fa-code display-4 d-inline d-sm-none">  Eduardo Brahim Alí</i>
                     </h1>
                 </div>
             </div><!--Fin header-->
             
             <div class="container-fluid row"><!--Contenido principal + nav-->
-                <div class="navbar navbar-expand-sm bg-dark navbar-dar font-weight-bolder text-center flex-column
+
+                <!--Nav colapsible para versión xs-->
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark rounded-bottom sticky-top w-100 d-sm-none">
+                    <a class="navbar-brand lead" href="#">Navegar</a>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <i class="fas fa-link"></i>
+                    </button>
+
+                    <!--Links-->
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link text-white-50 bg-dark">Intro</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="html/perfil-profesional.html" class="nav-link text-white-50 bg-dark">Perfil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="html/servicios.html" class="nav-link text-white-50 bg-dark">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="html/proyectos.html" class="nav-link text-white-50 bg-dark">Proyectos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="html/metas.html" class="nav-link text-white-50 bg-dark">Metas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="html/links.html" class="nav-link text-white-50 bg-dark">Links</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="html/contacto.html" class="nav-link text-white-50 bg-dark">Contacto</a>
+                            </li>
+                            <li class="nav-item my-2">
+                                <a href="https://www.linkedin.com/in/eduardo-brahim-alí-938a87168" 
+                                class="float-right text-white">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item my-2">
+                                <a href="https://github.com/Brahim006" class="float-right text-white">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <!--Fin nav colapsible para versión xs-->
+
+                <!--Nav para versiones con mayor tamaño de pantalla-->
+                <div class="navbar navbar-expand-sm bg-dark navbar-dar font-weight-bolder text-center flex-column d-none d-sm-block
                 col-sm-2 col-md-2 col-lg-2 col-xl-2"><!--Nav-->
                     <ul class="nav flex-column sticky-top pt-sm-3 pt-md-5 pt-lg-5 pt-xl-5">
                         <li class="nav-link active list-inline">
@@ -70,16 +121,16 @@
                             </i>
                         </li>
                     </ul>
-                </div><!--Fin nav-->
+                </div><!--Fin nav extendido-->
 
                 <!--Contenido principal de la página-->
                 <div class="col-sm col-md col-lg pl-lg-5 pr-lg-5 col-xl pl-xl-5 pr-xl-5">
 
-                    <h1 class="text-center display-4 my-sm-3 my-md-4 my-lg-5 my-xl-5">
+                    <h1 class="text-center display-4 d-none d-sm-block my-sm-3 my-md-4 my-lg-5 my-xl-5">
                         <i class="fas fa-sign-language">¡Bienvenido/a!</i>    
                     </h1>
 
-                    <p class="text-justify lead">
+                    <p class="text-justify lead mt-4 mt-sm-0">
                         Me presento. Como indica el encabezado, mi nombre es Eduardo Brahim Alí y soy un desarrollador
                         iniciante, por lo que creé esta página con dos motivos en mente:
                     </p>
@@ -88,16 +139,16 @@
                         algunas herramientas que posiblemente sean útiles para aquellos que se inician en lo que es el
                         desarrollo de software y desarrollo web.
                     </p>
-                    <p class="text-justify lead">
+                    <p class="text-justify lead mb-4 mb-sm-0">
                         Y por el otro, para que esta página en sí sirva como proyecto de muestra en el manejo de Bootstrap
                         CSS, intentando demostrar que con suficiente conocimiento básico de la herramienta es posible crear
                         una página funcional y responsivo haciendo uso del framework, limitándose a escribir todo 
                         el código de la página íntegramente en HTML.
                     </p>
-                    <p class="text-justify lead d-sm-none d-lg-block d-xl-block ml-md-3 mb-md-4 ml-lg-3 mt-lg-2 ml-xl-3 mt-xl-2">
+                    <p class="text-justify lead d-none d-sm-none d-lg-block d-xl-block ml-md-3 mb-md-4 ml-lg-3 mt-lg-2 ml-xl-3 mt-xl-2">
                         En las siguientes secciones, se se encuentra info detallada como:
                     </p>
-                    <dl class="d-sm-none d-lg-block d-xl-block ml-md-3 ml-lg-3 ml-xl-3 mt-lg-4 mt-xl-4">
+                    <dl class="d-none d-sm-none d-lg-block d-xl-block ml-md-3 ml-lg-3 ml-xl-3 mt-lg-4 mt-xl-4">
                         <dt>
                             <i class="far fa-address-card lead">
                                 <a href="html/perfil-profesional.html" class="text-dark">
@@ -146,8 +197,8 @@
                         <dd class="pl-md-2 pl-lg-4 pl-xl-4">- Un formulario de contacto para consultas rápidas.</dd>
                     </dl>
                     <blockquote class="blockquote border border-dark rounded shadow-lg
-                    my-sm-4 mt-md-4 mb-md-5 my-lg-5 m-lg-3 p-lg-3 my-xl-5 m-xl-3 p-xl-3">
-                        <p class="lead d-sm-none d-lg-block d-xl-block">
+                    my-4 my-sm-4 mt-md-4 mb-md-5 my-lg-5 m-lg-3 p-lg-3 my-xl-5 m-xl-3 p-xl-3">
+                        <p class="lead d-none d-sm-none d-lg-block d-xl-block">
                             Nota: Esta página sirve como acompañamiento durante todo mi desarrollo profesional,
                             por lo que es de esperarse que hayan múltiples cambios y actualizaciones a
                             lo largo de mi carrera.
@@ -163,7 +214,7 @@
             </div><!--Fin contenido principal + nav-->
 
             <div class="container-fluid row"><!--Fila del fondo-->
-                <div class="bg-dark col-sm-2 col-md-2 col-lg-2 col-xl-2"><!--Continuación nav-->
+                <div class="bg-dark d-none d-sm-block col-sm-2 col-md-2 col-lg-2 col-xl-2"><!--Continuación nav-->
                     <a href="https://www.linkedin.com/in/eduardo-brahim-alí-938a87168" 
                     class="float-left text-white ml-lg-4 ml-xl-4">
                         <i class="fab fa-linkedin-in"></i>
