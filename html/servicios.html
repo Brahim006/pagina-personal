@@ -166,11 +166,12 @@
                         </ul>
                     </nav><!--Fin Scroll-spy-->
 
-                    <h1 class="m-5" id="section1">
-                        <i class="fas fa-globe">  Desarrollo de páginas web</i>
+                    <h1 class="my-5 mx-2 mx-sm-5" id="section1">
+                        <i class="fas fa-globe">  Desarrollo <span class="d-none d-sm-inline">de páginas</span> web
+                        </i>
                     </h1>
 
-                    <p class="lead"><!--Intro-->
+                    <p class="lead d-none d-sm-block"><!--Intro-->
                         Hoy en día resulta evidente cómo la forma de hacer negocios y promocionarse cambió con
                         la llegada de internet, al punto de que una empresa o negocio sin presencia en la red
                         puede estar en significativa desventaja respecto a las demás.
@@ -186,21 +187,28 @@
                         habla del perfil de nuestro emprendimiento, que ya sea chico o grande, vino para quedarse.
                     </p>
                     <h2 class="ml-4 my-4" id="section20">
-                        <i class="fas fa-drafting-compass">  Pero, ¿en qué consiste el diseño de una página web?</i>
+                        <i class="fas fa-drafting-compass">  <span class="d-none d-sm-inline">Pero,</span> 
+                            ¿En qué consiste el diseño de una página web?</i>
                     </h2>
                     <p class="lead">
                         Principalmente, en lograr una buena experiencia para el usuario.
                         Esto se obtiene generando un sitio que no sólo sea vistoso, sino que también intuitivo
                         y fácil de usar.
-                        A la hora de contratar mis servicios, es importante tener en vista ó entender ciertas
+                        A la hora de contratar servicios de desarrollo web, es importante tener en vista ó entender ciertas
                         cosas:
                     </p><!--Fin intro-->
                     <h3 class="ml-3 my-3" id="section21">
                         <i class="fas fa-window-restore">  Definición de las secciones</i>
                     </h3>
 
-                    <div class="d-flex"><!--Texto + imágenes para secciones-->
-                        <p class="lead w-75 mr-3">
+                    <p class="lead d-block d-md-none"><!--Párrafo para la versión móvil-->
+                        La mejor forma de facilitar la navegación dentro de una página es dividir el contenido
+                        en diferentes secciones, ya que de esta forma los usuarios pueden dirigirse directamente
+                        hacia el contenido por el que están interesados. Dichas secciones son en realidad
+                        diferentes documentos con una estructura base en común y enlazados entre sí.
+                    </p>
+                    <div class="d-flex flex-column flex-md-row"><!--Texto + imágenes para secciones-->
+                        <p class="lead w-75 mr-md-3 d-none d-md-block">
                             La mejor forma de facilitar la navegación dentro de una página es dividir el contenido
                             en diferentes secciones, ya que de esta forma los usuarios pueden dirigirse directamente
                             hacia el contenido por el que están interesados. Dichas secciones son en realidad
@@ -211,7 +219,8 @@
                             a través de otros medios.
                         </p>
                         <img src="../res/ilustracion-secciones.png" alt="Ilustración de las secciones de la página"
-                        class="rounded border border-secondary shadow-lg" style="width:400px">
+                        class="rounded border border-secondary shadow-lg d-none d-sm-block my-sm-3 my-md-0" 
+                        style="width:400px">
                     </div><!--Fin texto + imágenes para secciones-->
 
                     <h3 class="ml-3 my-3" id="section22">
@@ -225,10 +234,13 @@
                         versión final del sitio web, en dicho caso, lo más normal es que haya algunas imágenes en blanco
                         tomando el lugar en el que posteriormente van a estar las imágenes reales y texto de relleno
                         <a href="http://www.hemisferiodigital.es/lorem-ipsum/" target="_blank" class="text-dark">
-                        Lorem Ipsum</a>, de modo que se pueda tener una idea de cómo van a estar distribuidos estos 
-                        elementos en la etapa final del desarrollo.
+                        Lorem Ipsum</a>
+                        <span class="d-none d-sm-inline">
+                            , de modo que se pueda tener una idea de cómo van a estar distribuidos estos 
+                            elementos en la etapa final del desarrollo.
+                        </span>
                     </p>
-                    <blockquote class="blockquote border border-dark rounded mt-5 m-3 p-3 shadow-lg mb-5">
+                    <blockquote class="blockquote border border-dark rounded shadow-lg my-5 mx-3 p-3 d-none d-sm-block">
                         <p class="lead">
                             <span class="font-weight-bold">Nota:</span> el contenido puede ser provisto parcial
                             ó totalmente por el cliente a la hora de contratar el servicio, aunque en caso contrario,
@@ -241,8 +253,16 @@
                         <i class="fab fa-wpforms">  Formulario</i>
                     </h3>
 
-                    <div class="d-flex"><!--Texto + imágenes para formularios-->
-                        <p class="lead w-75 mr-3">
+                    <p class="lead d-block d-md-none"><!--Párrafo para la versión móvil-->
+                        Un formularo de contacto es una estructura simple que contiene diferentes campos por medio de los cuales
+                        se puede solicitar información al usuario para luego ser procesada y/o enviada a un mail para su uso.
+                        Si bien es buena idea tener disponible información de contacto en su respectivo apartado, también es
+                        bastante útil el disponer en nuestro sitio de un formulario de contacto, ya que esto alienta a los
+                        usuarios a realizar consultas de una forma sencilla, sin tener que salir de la página o usar un medio
+                        externo para ello.
+                    </p>
+                    <div class="d-flex flex-column flex-md-row"><!--Texto + imágenes para formularios-->
+                        <p class="lead w-75 d-none d-md-block mr-3">
                             Un formularo de contacto es una estructura simple que contiene diferentes campos por medio de los cuales
                             se puede solicitar información al usuario para luego ser procesada y/o enviada a un mail para su uso.
                             Si bien es buena idea tener disponible información de contacto en su respectivo apartado, también es
@@ -253,15 +273,24 @@
                             <a href="contacto.html" class="text-dark">contacto</a>.
                         </p>
                         <img src="../res/ilustracion-formulario.png" alt="Imagen ilustrativa de un formulario web"
-                        class="rounded border border-secondary shadow-lg" style="width:400px">
+                        class="rounded border border-secondary shadow-lg d-none d-sm-block my-sm-3 my-md-0" 
+                        style="width:400px">
                     </div><!--Fin texto + imágenes para formularios-->
 
                     <h3 class="ml-3 my-3" id="section24">
                         <i class="fas fa-pencil-ruler">  Sketch-Wireframe (bocetos)</i>
                     </h3>
 
-                    <div class="d-flex"><!--Texto + imágenes para sketch-wireframe-->
-                        <p class="lead w-75 mr-3">
+                    <p class="lead d-block d-md-none"><!--Párrafo para la versión móvil-->
+                        El punto de partida a la hora de solicitar el desarrollo de una página web es el "sketch"
+                        de esta, el cual es básicamente un boceto a mano para ilustrar la idea de a lo que se quiere
+                        llegar. Dicho boceto puede cambiar varias veces hasta que se llegue a un común acuerdo con el cliente
+                        sobre la estructuración de la página.
+                        Una vez logrado el boceto, se procede a ilustrar el diseño en un Wireframe, el cual es un boceto
+                        digital que cuenta con mayor detalle y sirve como modelo para la programación del sitio.
+                    </p>
+                    <div class="d-flex flex-column flex-md-row"><!--Texto + imágenes para sketch-wireframe-->
+                        <p class="lead d-none d-md-block w-75 mr-3">
                             El punto de partida a la hora de solicitar el desarrollo de una página web es el "sketch"
                             de esta, el cual es básicamente un boceto a mano para ilustrar la idea de a lo que se quiere
                             llegar. Dicho boceto puede cambiar varias veces hasta que se llegue a un común acuerdo con el cliente
@@ -273,15 +302,23 @@
                         </p>
                         <img src="../res/ilustracion-sketch.png"
                         alt="Imagen ilustrativa de un posible sketch para esta página"
-                        class="rounded border border-secondary shadow-lg" style="width:400px">
+                        class="rounded border border-secondary shadow-lg d-none d-sm-block my-sm-3 my-md-0" 
+                        style="width:400px">
                     </div><!--Fin texto + imágenes para sketch-wireframe-->
 
                     <h3 class="ml-3 my-3" id="section25">
                         <i class="fas fa-mobile-alt">  Diseño responsivo</i>
                     </h3>
 
-                    <div class="d-flex">
-                        <p class="lead w-75 mr-3">
+                    <p class="lead d-block d-md-none"><!--Párrafo para la versión móvil-->
+                        El diseño responsivo consiste en diseñar un sitio de modo que se adapte a distintos dispositivos
+                        y, por lo tanto, a distintas densidades y tamaños de pantalla (móviles, tables, laptops, PCs de escritorio, etc).
+                        Si bien lo más sensato es aplicar una filosofía moviles-first ya que los móviles dominan el mercado, es 
+                        importante englobar la mayor parte de los dispositivos posibles. En este punto, el cliente puede mostrar 
+                        sus preferencias por tal y cual dispositivo y/o navegadores a los cuales quiere que su sitio esté dirigido.
+                    </p>
+                    <div class="d-flex flex-column flex-md-row">
+                        <p class="lead d-none d-md-block w-75 mr-3">
                             El diseño responsivo consiste en diseñar un sitio de modo que se adapte a distintos dispositivos
                             y, por lo tanto, a distintas densidades y tamaños de pantalla (móviles, tables, laptops, PCs de escritorio, etc).
                             Si bien lo más sensato es aplicar una filosofía moviles-first ya que los móviles dominan el mercado, es 
@@ -289,10 +326,11 @@
                             sus preferencias por tal y cual dispositivo y/o navegadores a los cuales quiere que su sitio esté dirigido.
                         </p>
                         <img src="../res/ilustracion-responsive.png" alt="Imagen ilustrativa de un diseño adaptado a celulares"
-                        class="rounded border border-secondary shadow-lg" style="width:400px">
+                        class="rounded border border-secondary shadow-lg d-none d-sm-block my-sm-3 my-md-0" 
+                        style="width:400px">
                     </div>
 
-                    <blockquote class="blockquote border border-dark rounded mt-5 m-3 p-3 shadow-lg mb-5">
+                    <blockquote class="blockquote border border-dark rounded shadow-lg d-none d-sm-block my-5 mx-3 p-3">
                         <p class="lead">
                             <span class="font-weight-bold">Nota:</span> si no se tienen preferencias ó conocimientos suficientes para
                             decidir, puede pedir opinión o asesoramiento, es relativamente sencillo hacer un estudio de mercado para
@@ -326,7 +364,7 @@
                         Por otro lado, los dominios son propiedad intelectual, por lo tanto, requieren de una persona física ó jurídica para
                         tramitarse.
                     </p>
-                    <blockquote class="blockquote border border-dark rounded mt-5 m-3 p-3 shadow-lg mb-5">
+                    <blockquote class="blockquote border border-dark rounded shadow-lg d-none d-sm-block my-5 mx-3 p-3">
                         <p class="lead">
                             <span class="font-weight-bold">Nota:</span> si el cliente lo desea, puede encargarse de la gestión de uno o ambos de los
                             puntos anteriores, en dicho caso debe llegarse a un acuerdo para poder proveerle los archivos de manera segura y que sea
@@ -350,7 +388,7 @@
                         Ciertos cambios pueden ser muy grandes como para ser considerados simple mantenimiento, por lo que se deben refacturar
                         según la situación, buen ejemplo de esto serían: 
                     </p>
-                    <dl class="pl-5 lead">
+                    <dl class="pl-3 pl-sm-5 lead">
                         <dd>- Adición de nuevas secciones</dd>
                         <dd>- Cambios significativos en la estructura ó estilo de la página</dd>
                         <dd>- Cambios que alteren significativamente cómo se procesan los datos en los formularios</dd>
@@ -372,7 +410,7 @@
                         son conciderados a la hora de dar un precio final:
                     </p>
 
-                    <dl class="pl-5">
+                    <dl class="pl-3 pl-sm-5">
                         <dt>Cantidad de secciones</dt>
                         <dd>
                             - Cada sección agregada al sitio y enlazada con las otras añade valor al precio final.
@@ -380,8 +418,11 @@
                         <dt>Información y contenido</dt>
                         <dd>- En el caso de no proveerse la información, el costo de investigación será considerado en el precio final.</dd>
                         <dd>- De igual forma, la búsqueda y/o producción de contenido (videos e imágenes, entre otros) impactará sobre el precio.</dd>
-                        <dd>- Se recomienda evitar a todo costo la inclusión de contenido de terceros sujetos a derechos de autor (o que se desconozca
-                            su disponibilidad para su libre uso), ya que esto puede resultar en dadas de baja de dicho contenido y en el peor de los
+                        <dd>- Se recomienda evitar a todo costo la inclusión de contenido de terceros sujetos a derechos de autor 
+                            <span class="d-none d-sm-inline">
+                                (o que se desconozca su disponibilidad para su libre uso)
+                            </span>
+                            , ya que esto puede resultar en dadas de baja de dicho contenido y en el peor de los
                             casos hasta problemas legales.
                         </dd>
                         <dt>Inclusión de formularios</dt>
@@ -421,7 +462,7 @@
                             traducción del contenido, si no también a la adaptación e integración.
                         </dd>
                     </dl>
-                    <blockquote class="blockquote border border-dark rounded mt-5 m-3 p-3 shadow-lg mb-5">
+                    <blockquote class="blockquote border border-dark rounded shadow-lg d-none d-sm-block my-5 mx-3 p-3">
                         <p class="lead">
                             <span class="font-weight-bold">Nota:</span> el presupuesto será puesto a disposición del cliente
                             una vez aceptados los bocetos del wireframe y/o sketch, en ese momento le enviaré un
@@ -437,7 +478,7 @@
                     <p class="lead">
                         Antes de contratar el servicio, considero pertinente el hacer ciertas aclaraciones:
                     </p>
-                    <dl class="pl-5">
+                    <dl class="pl-3 pl-sm-5">
                         <dd>- Una vez aprobado el sketch y/o wireframe, ya se podrá determinar el precio final, dicho precio debe ser aprobado
                             con una firma simbólica del cliente (sin peso legal), a partir del cual se comenzará el desarrollo.
                         </dd>
@@ -477,7 +518,8 @@
                             con las cuales aún no estoy familiarizado.
                         </dd>
                     </dl>
-                    <blockquote class="blockquote border border-dark rounded shadow-lg my-4 mt-md-4 mb-md-5 my-lg-5 mx-lg-3 p-lg-3">
+                    <blockquote class="blockquote border border-dark rounded shadow-lg d-none d-sm-block 
+                    my-4 mt-md-4 mb-md-5 my-lg-5 mx-lg-3 p-lg-3">
                         <p class="lead d-none d-md-block">
                             Por cualquier tipo de duda, su <a href="contacto.html" class="text-dark">consulta</a> 
                             no molesta, por el contrario.
