@@ -122,19 +122,19 @@
                 <!--Contenido principal de la página-->
                 <div class="col-sm pl-lg-5 pr-lg-5">
 
-                    <div class="ml-5 mr-5"><!--Texto-->
-                        <h1 class="display-4 text-center m-5">
+                    <div class="my-md-5"><!--Texto-->
+                        <h1 class="display-4 text-center my-5 m-sm-5">
                             <i class="fas fa-mail-bulk">  Contacto</i>
                         </h1>
-                        <p class="lead mb-5">
+                        <p class="lead d-none d-md-block mb-5">
                             Si bien mi info de contacto se encuentra al pie de cada página, este formulario sirve
                             para consultas más específicas.
                         </p>
                     </div>
                     <!--Contenedor del formulario-->
-                    <div class="container bg-dark rounded shadow-lg mt-3 mb-5 w-75">
-                        <form action="../php/enviar.php" method="POST" class="pl-4 pr-4 pt-2 pb-2">
-                            <div class="row">
+                    <div class="container bg-dark rounded shadow-lg mt-3 mb-5">
+                        <form action="../php/enviar.php" method="POST" class="mx-md-5 px-md-5 py-md-2">
+                            <div class="d-flex flex-column flex-sm-row row">
                                 <div class="col">
                                     <input type="text" placeholder="Nombre" name="nombre" 
                                     class="form-control mt-3 mb-3 ml-4 mr-4 pl-3 w-75" required>
@@ -144,7 +144,7 @@
                                     class="form-control mt-3 mb-3 ml-4 mr-4 pl-3 w-75" required>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row d-flex flex-column flex-sm-row">
                                 <div class="col">
                                     <input type="number" placeholder="Teléfono" name="telefono"
                                     class="form-control mt-3 mb-3 ml-4 mr-4 pl-3 w-75">
@@ -156,7 +156,7 @@
                             </div>
                             <div class="row">
                                 <div class="form-group col">
-                                    <label for="combobox" class="text-center lead text-white w-50 mx-auto">
+                                    <label for="combobox" class="text-center lead text-white mx-auto">
                                         Tipo de consulta</label>
                                     <select name="combobox" class="form-control w-50 mx-auto">
                                         <option value="servicios">Servicios</option>
@@ -173,7 +173,7 @@
                                 </div>
                             </div>
                             <!--Botones-->
-                            <div class="row">
+                            <div class="row pb-4">
                                 <div class="col d-flex justify-content-center">
                                     <button formmethod="POST" type="submit" class="rounded lead text-dark">enviar</button>
                                 </div>
