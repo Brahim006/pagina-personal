@@ -157,7 +157,7 @@
                         </ul>
                     </nav><!--Fin Scroll-spy-->
 
-                    <p class="lead mt-5">
+                    <p class="lead d-none d-sm-block mt-5">
                         Esta sección la quiero dedicar a hablar un poco de los proyectos que desarrollé y que 
                         sigo desarrolando, para dar una vista más descriptiva y hablar un poco de las decisiones
                         tomadas y tecnologías aplicadas.
@@ -179,14 +179,14 @@
                         información sobre servicios y contacto de la peluquería We Colour Estilistas, situada en la ciudad
                         de Córdoba, Argentina.
                     </p>
-                    <p class="lead">
+                    <p class="d-none d-sm-block lead">
                         Su desarrollo fue lento, ya que obviamente fue donde fuí plasmando todo lo
                         aprendido durante el curso, sin embargo intenté dejarla a un nivel más manejable (hablando
                         del código más que nada), en caso de que se requieran hacer posteriores modificaciones. Ya que después de 
                         todo, la idea es que sea una página funcional para complementar la oferta de publicidad de la peluquería.
                     </p>
-                    <div class="d-flex"><!--Contenedor carta/info para We colour-->
-                        <div class="card" style="width:400px">
+                    <div class="d-flex flex-column flex-md-row"><!--Contenedor carta/info para We colour-->
+                        <div class="card d-none d-sm-block" style="width:400px">
                             <img class="card-img-top" src="../res/wecolour-ilustrativa.png" 
                             alt="Imagen ilustrativa de la página de We Colour Estilistas">
                             <div class="card-body">
@@ -201,7 +201,7 @@
                                 Repositorio GitHub</a>
                             </div>
                         </div>
-                        <p class="lead p-3 w-50">
+                        <p class="lead p-3 w-50 d-none d-md-inline">
                             En esta página di mis primeros pasos en dos herramientas que son las bases del desarrollo
                             web: <a href="#" data-toggle="tooltip" data-placement="top" title="HiperText Markup Language"
                             class="text-dark">HTML</a> y 
@@ -228,6 +228,19 @@
                             contacto.
                             Tabién es mi primer proyecto gestionado a través de Git y Github.
                         </p>
+                        <p class="lead d-block d-md-none mt-4"><!--Texto para la versión móvil-->
+                            En esta página di mis primeros pasos en dos herramientas que son las bases del desarrollo
+                            web: <a href="#" data-toggle="tooltip" data-placement="top" title="HiperText Markup Language"
+                            class="text-dark">HTML</a> y 
+                            <a href="#" data-toggle="tooltip" data-placement="top" title="Cascade Style Sheeets"
+                            class="text-dark">CSS</a>.
+                            El punto de inflexión en su desarrollo creo yo fue cuando empecé a implementar 
+                            <a href="#" data-toggle="tooltip" data-placement="top" title="Super CSS"
+                            class="text-dark">SCSS</a> , ya que mejoró enormemente la la forma de organizar el código CSS
+                            hacíendolo mucho más fácil de leer y modificar.
+                        </p>
+                        <a href="https://github.com/Brahim006/we-colour-estilistas" 
+                        class="btn btn-primary bg-dark border-dark lead d-sm-none my-4"  target="_blank">Link a repositorio en GitHub</a>
                     </div><!--Fin del contenedor carta/info para We colour-->
 
                     <h2 class="my-4" id="section11">
@@ -237,12 +250,14 @@
                     <p class="lead">
                         Como se aclaró en la <a href="../index.html" class="text-dark">introducción</a>, esta página sirve tanto
                         como página personal como proyecto web desarrollado íntegramente a través del framework de
-                        diseño web <a href="https://getbootstrap.com/" target="_blank" class="text-dark">CSS Bootstrap</a>,
-                        el cual es una herramienta que ya había usado pero nunca en profundidad, por lo que decidí expandir 
-                        el conocimiento y llevarlo a la práctica haciendo algo que a la vez me sea útil.
+                        diseño web <a href="https://getbootstrap.com/" target="_blank" class="text-dark">CSS Bootstrap</a>
+                        <span class="d-none d-sm-inline">
+                            ,el cual es una herramienta que ya había usado pero nunca en profundidad, por lo que decidí expandir 
+                            el conocimiento y llevarlo a la práctica haciendo algo que a la vez me sea útil
+                        </span>.
                     </p>
-                    <div class="d-flex"><!--Contenedor carta/info para la página personal-->
-                        <div class="card" style="width:400px">
+                    <div class="d-flex flex-column flex-md-row"><!--Contenedor carta/info para la página personal-->
+                        <div class="card d-none d-sm-block" style="width:400px">
                             <img class="card-img-top" src="../res/pagina-personal-ilustrativa.png"
                             alt="Imagen ilustrativa de esta página">
                             <div class="card-body">
@@ -253,7 +268,7 @@
                                 Repositorio GitHub</a>
                             </div>
                         </div>
-                        <p class="lead p-3 w-50">
+                        <p class="lead p-3 w-50 d-none d-md-block">
                             Su desarrollo es simple, teniendo toda la estructura escrita en HTML y estilizada
                             completamente con Bootstrap CSS 4 (salvo en algunos elementos en los que se requirió
                             un poco de CSS tradicional), además de la inclusión de algunos scripts, también 
@@ -264,6 +279,16 @@
                             sirviendo también como experiencia sobre la actualización y mantenimiento de un proyecto
                             de larga vida.
                         </p>
+                        <p class="lead d-block d-md-none mt-4"><!--Texto para la versión móvil-->
+                            Su desarrollo es simple, teniendo toda la estructura escrita en HTML y estilizada
+                            completamente con Bootstrap CSS 4 (salvo en algunos elementos en los que se requirió
+                            un poco de CSS tradicional), además de la inclusión de algunos scripts, también 
+                            provenientes de Bootstrap, para agregar algo de interactividad.
+                            Para la paleta de colores me decidí por algo sencillo como una escala de grises, que
+                            bien usada puede generar una página vistosa.
+                        </p>
+                        <a href="https://github.com/Brahim006/pagina-personal" 
+                        class="btn btn-primary bg-dark border-dark lead d-sm-none my-4"  target="_blank">Link a repositorio en GitHub</a>
                     </div><!--Contenedor carta/info para la página personal-->
 
                     <h1 class="my-5 ml-4">
@@ -290,8 +315,8 @@
                         lo que se vuelve una tarea pesada si deseamos parsear archivos grandes y repetitiva si
                         parseamos contenido XML en nuestras aplicaciones de manera habitual.
                     </p>
-                    <div class="d-flex"><!--Contenedor carta/info para XFramework-->
-                        <div class="card" style="width:400px">
+                    <div class="d-flex flex-column flex-md-row"><!--Contenedor carta/info para XFramework-->
+                        <div class="card d-none d-sm-block" style="width:400px">
                             <img class="card-img-top" src="../res/xframework-ilustrativa.png" 
                             alt="Imagen ilustrativa de XFramework">
                             <div class="card-body">
@@ -301,9 +326,9 @@
                                 Repositorio GitHub</a>
                             </div>
                         </div>
-                        <p class="lead p-3 w-50">
+                        <p class="lead p-3 w-50 d-none d-md-block">
                             XFramework viene a dar solución a dicho problema con un planteamiento sencillo:
-                            esto es, usando la propia API de Java parasea el archivo que le indiquemos a 
+                            esto es, usando la propia API de Java parsea el archivo que le indiquemos a 
                             través de la clase 
                             <a href="https://github.com/Brahim006/XFramework/blob/master/src/lib/xframework/XMLFactory.java"
                             target="_blank" class="text-dark">XMLFactory</a>, para luego proceder a almacenar toda la información
@@ -328,10 +353,13 @@
                             sample.xml</a>, el cual incluye tags con múltiples ocurrencias y que contienen
                             atributos.
                         </p>
+                        <a href="https://github.com/Brahim006/XFramework" 
+                        class="btn btn-primary bg-dark border-dark lead d-sm-none my-4"  target="_blank">Link a repositorio en GitHub</a>
                     </div><!--Fin contenedor carta/info para XFramework-->
 
-                    <blockquote class="blockquote border border-dark rounded shadow-lg my-4 mt-md-4 mb-md-5 my-lg-5 mx-lg-3 p-lg-3">
-                        <p class="lead d-none d-md-block">
+                    <blockquote class="blockquote border border-dark rounded shadow-lg d-none d-md-block my-4 mt-md-4 mb-md-5 
+                    my-lg-5 mx-lg-3 p-lg-3">
+                        <p class="lead">
                             <span class="font-weight-bold">Nota:</span> este framework NO es de mi autoría, lo saqué del
                             capítulo 12 del libro "Java a Fondo" de Pablo Sznajdleder del cual hablo en la sección
                             de <a href="links.html" class="text-dark">links</a>, yo sólo lo transcribí en un proyecto, 
@@ -349,14 +377,16 @@
                         loguearse) obtiene acceso a funciones básicas de un sistema de gestión y envío de 
                         trámites por medio de una interfaz sencilla en la cual aparecen las opciones para
                         crear y finalizar trámites según los permisos que tenga éste usuario.
-                        Si bien, por tratarse de un curso de Java inicial el trabajo requerido era en sí mucho
-                        más sencillo (la lógica de negocios era la misma, la diferencia es que la aplicación
-                        a desarrollar sólo tenía que simular el proceso), decidí ir un paso más adelante
-                        y desarrollar una aplicación que realmente cubra esa necesidad.
+                        <span class="d-none d-md-inline">
+                            Si bien, por tratarse de un curso de Java inicial el trabajo requerido era en sí mucho
+                            más sencillo (la lógica de negocios era la misma, la diferencia es que la aplicación
+                            a desarrollar sólo tenía que simular el proceso), decidí ir un paso más adelante
+                            y desarrollar una aplicación que realmente cubra esa necesidad.
+                        </span>
                     </p>
 
-                    <div class="d-flex mt-4"><!--Contenedor carta/info para Cliente Java-->
-                        <div class="card" style="width:400px">
+                    <div class="d-flex flex-column flex-md-row mt-4"><!--Contenedor carta/info para Cliente Java-->
+                        <div class="card d-none d-sm-block" style="width:400px">
                             <img class="card-img-top" src="../res/cliente-java-ilustrativa.png" 
                             alt="Imagen ilustrativa de la aplicación cliente desarrollada en Java">
                             <div class="card-body">
@@ -370,7 +400,7 @@
                                 Sección en GitHub</a>
                             </div>
                         </div>
-                        <p class="lead p-3 w-50">
+                        <p class="lead p-3 w-50 d-none d-md-block">
                             La aplicación cliente si bien corre completamente en la máquina del usuario, resuelve todas
                             sus peticiones a través de conexiones a un servidor conectado a la misma red, siendo la ventana 
                             de login la primera de todas a partir de la cual se genera un objeto
@@ -395,10 +425,23 @@
                             milisegundos, refrescar los componentes sensibles a cambios a través de un hilo independiente que se encarga
                             de hacer peticiones al servidor.
                         </p>
+                        <p class="lead d-block d-md-none mt-4"><!--Texto para la versión móvil-->
+                            La aplicación cliente si bien corre completamente en la máquina del usuario, resuelve todas
+                            sus peticiones a través de conexiones a un servidor conectado a la misma red, siendo la ventana 
+                            de login la primera de todas a partir de la cual se genera un objeto
+                            <a href="https://github.com/Brahim006/cliente-servidor-en-java/blob/master/Aplicacion%20Cliente/src/com/domain/dto/UserDTO.java"
+                            target="_blank" class="text-dark">UserDTO</a> el cual su utiliza como parámetro para la construcción de la
+                            <a href="https://github.com/Brahim006/cliente-servidor-en-java/blob/master/Aplicacion%20Cliente/src/com/domain/gui/InterfazCliente.java"
+                            target="_blank" class="text-dark">interfaz de usuario</a> dearrollada íntegramente a partir de la librería 
+                            <a href="https://docs.oracle.com/javase/7/docs/api/javax/swing/package-summary.html" target="_blank"
+                            class="text-dark">swing</a>.
+                        </p>
+                        <a href="https://github.com/Brahim006/cliente-servidor-en-java/tree/master/Aplicacion%20Cliente" 
+                        class="btn btn-primary bg-dark border-dark lead d-sm-none my-4"  target="_blank">Link a repositorio en GitHub</a>
                     </div><!--Fin contenedor carta/info para Cliente Java-->
 
-                    <div class="d-flex mt-4"><!--Contenedor carta/info para Servidor Java-->
-                        <p class="lead p-3 w-50">
+                    <div class="d-flex flex-column flex-md-row mt-4"><!--Contenedor carta/info para Servidor Java-->
+                        <p class="lead p-3 w-50 d-none d-md-block">
                             Por su lado el
                             <a href="https://github.com/Brahim006/cliente-servidor-en-java/blob/master/Aplicacion%20Servidor/src/com/domain/server/Server.java"
                             target="_blank" class="text-dark">
@@ -415,7 +458,7 @@
                             con métodos sincronizados para evitar posibles problemas al ejecutar commits cuando se quieren
                             realizar updates (las consultas simples no suelen generar este tipo de problemas).
                         </p>
-                        <div class="card" style="width:400px">
+                        <div class="card d-none d-sm-block" style="width:400px">
                             <img class="card-img-top" src="../res/server-java-ilustrativa.png" 
                             alt="Imagen ilustrativa del código de la aplicación Servidor">
                             <div class="card-body">
@@ -426,10 +469,28 @@
                                 Sección en GitHub</a>
                             </div>
                         </div>
+                        <p class="lead d-block d-md-none mt-4"><!--Texto para la versión móvil-->
+                            Por su lado el
+                            <a href="https://github.com/Brahim006/cliente-servidor-en-java/blob/master/Aplicacion%20Servidor/src/com/domain/server/Server.java"
+                            target="_blank" class="text-dark">
+                            servidor</a> se encarga de (una vez iniciado) escuchar peticiones a través de un
+                            <a href="https://docs.oracle.com/javase/7/docs/api/java/net/ServerSocket.html"
+                            target="_blank" class="text-dark">
+                            ServerSocket</a> que al recibir una conexión crea un hilo el cual se encargará de establecer un flujo
+                            cliente-servido mientras el socket vuelve a seguir a la espera de nuevas conexiones.
+                            Una vez establecido el o los servicios requeridos por el cliente, se recurre a un
+                            <a href="https://github.com/Brahim006/cliente-servidor-en-java/blob/master/Aplicacion%20Servidor/src/com/domain/sql/ConnectionPool.java"
+                            target="_blank" class="text-dark">
+                            pool de conexiones</a> el cual gestiona las conexiones a la base de datos HSQL, contando
+                            con métodos sincronizados para evitar posibles problemas al ejecutar commits cuando se quieren
+                            realizar updates.
+                        </p>
+                        <a href="https://github.com/Brahim006/cliente-servidor-en-java/tree/master/Aplicacion%20Servidor" 
+                        class="btn btn-primary bg-dark border-dark lead d-sm-none my-4"  target="_blank">Link a repositorio en GitHub</a>
                     </div><!--Fin contenedor carta/info para Servidor Java-->
 
-                    <div class="d-flex mt-4"><!--Contenedor carta/info para base de datos HSQLDB-->
-                        <div class="card" style="width:400px">
+                    <div class="d-flex flex-column flex-md-row mt-4"><!--Contenedor carta/info para base de datos HSQLDB-->
+                        <div class="card d-none d-sm-block" style="width:400px">
                             <img class="card-img-top" src="../res/base-hsqldb-ilustrativa.png" 
                             alt="Imagen ilustrativa de la base de datos HSQLDB">
                             <div class="card-body">
@@ -439,7 +500,7 @@
                                 Sección en GitHub</a>
                             </div>
                         </div>
-                        <p class="lead p-3 w-50">
+                        <p class="lead p-3 w-50 d-none d-md-block">
                             Si bien la idea del proyecto era representar la lógica de negocios con un diseño orientado a objetos,
                             en esta versión se ve aplicada directamente en la base de datos por medio de las relaciones entre tablas.
                             La base de datos en cuestión es de código abierto y es una
@@ -458,6 +519,21 @@
                             puerta abierta a la implementación de nuevas bases de datos las cuales podrían requerir de una
                             sintáxis distinta, por lo que me pareció conveniente el describir su comportamiento de antemano.
                         </p>
+                        <p class="lead d-block d-md-none mt-4"><!--Texto para la versión móvil-->
+                            Si bien la idea del proyecto era representar la lógica de negocios con un diseño orientado a objetos,
+                            en esta versión se ve aplicada directamente en la base de datos por medio de las relaciones entre tablas.
+                            La base de datos en cuestión es de código abierto y es una
+                            <a href="http://hsqldb.org/" target="_blank" class="text-dark">
+                            HSQLDB</a>, desarrollada íntegramente en Java. El criterio de elección para esta base
+                            es que es la única que sé usar a este nivel.
+                            Todas las operaciones relacionadas a las peticiones y modificaciones se hacen a través de
+                            <a href="https://github.com/Brahim006/cliente-servidor-en-java/tree/master/Aplicacion%20Servidor/src/com/domain/sql/dto"
+                            target="_blank" class="text-dark">objetos de transferencia de datos (DTO)</a>, los cuales son usados por los
+                            <a href="https://github.com/Brahim006/cliente-servidor-en-java/tree/master/Aplicacion%20Servidor/src/com/domain/sql/daohsqldblimple"
+                            target="_blank" class="text-dark">objetos de acceso a datos (DAO)</a>.
+                        </p>
+                        <a href="https://github.com/Brahim006/cliente-servidor-en-java/tree/master/Aplicacion%20Cliente" 
+                        class="btn btn-primary bg-dark border-dark lead d-sm-none my-4"  target="_blank">Link a repositorio en GitHub</a>
                     </div><!--Fin contenedor carta/info para base de datos HSQLDB-->
 
                     <p class="lead">
@@ -470,15 +546,16 @@
                         <a href="https://github.com/Brahim006/cliente-servidor-en-java/blob/master/Aplicacion%20Cliente/configuracion.xml"
                         target="_blank" class="text-dark">
                         configuración del cliente</a> sin la necesidad de recompilar nada.
-                        Otra ventaja de este modelo que me gustaría implementar en un futuro es la parametrización de
-                        todo el texto, haciendo de esta manera la internacionalización de la aplicación mucho más fácil.
+                        <span class="d-none d-md-inline">
+                            Otra ventaja de este modelo que me gustaría implementar en un futuro es la parametrización de
+                            todo el texto, haciendo de esta manera la internacionalización de la aplicación mucho más fácil.
+                        </span>
                     </p>
                     <p class="lead">
-                        Si bien el proyecto es, dentro de todo funcional, aún está incompleto. Por lo que tengo planeado
-                        continuarlo hasta que tenga un aspecto más "profesional", además de ciertos cambios respecto a la
-                        versión publicada:
+                        Si bien el proyecto es, dentro de todo "funcional", aún está incompleto, por lo que tengo planeado
+                        finalizarlo, además de ciertos cambios respecto a la versión publicada:
                     </p>
-                    <dl class="lead ml-4 lead">
+                    <dl class="lead ml-2 ml-md-4">
                         <dd>- Actualmente me encuentro estudiando el uso de 
                             <a href="https://hibernate.org/" target="_blank" class="text-dark">Hibernate</a>
                             para Java, por lo que seguramente termine
